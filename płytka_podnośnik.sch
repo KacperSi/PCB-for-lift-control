@@ -1,0 +1,461 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR01
+U 1 1 60E840BC
+P 1200 950
+F 0 "#PWR01" H 1200 800 50  0001 C CNN
+F 1 "+5V" H 1215 1123 50  0000 C CNN
+F 2 "" H 1200 950 50  0001 C CNN
+F 3 "" H 1200 950 50  0001 C CNN
+	1    1200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60E846E7
+P 1200 5750
+F 0 "#PWR02" H 1200 5500 50  0001 C CNN
+F 1 "GND" H 1205 5577 50  0000 C CNN
+F 2 "" H 1200 5750 50  0001 C CNN
+F 3 "" H 1200 5750 50  0001 C CNN
+	1    1200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 60E85889
+P 1200 5750
+F 0 "#FLG02" H 1200 5825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 5923 50  0000 C CNN
+F 2 "" H 1200 5750 50  0001 C CNN
+F 3 "~" H 1200 5750 50  0001 C CNN
+	1    1200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60E870DC
+P 1200 1100
+F 0 "#FLG01" H 1200 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 1273 50  0000 C CNN
+F 2 "" H 1200 1100 50  0001 C CNN
+F 3 "~" H 1200 1100 50  0001 C CNN
+	1    1200 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 950  1200 1000
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 60E92BC0
+P 1750 1800
+F 0 "J1" H 1668 1475 50  0000 C CNN
+F 1 "przycisk_dol" H 1668 1566 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1750 1800 50  0001 C CNN
+F 3 "~" H 1750 1800 50  0001 C CNN
+	1    1750 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60E94F24
+P 2850 1800
+F 0 "J2" H 2768 1475 50  0000 C CNN
+F 1 "pilot_dol" H 2768 1566 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 2850 1800 50  0001 C CNN
+F 3 "~" H 2850 1800 50  0001 C CNN
+	1    2850 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 1000 1950 1000
+Wire Wire Line
+	1950 1000 1950 1700
+Connection ~ 1200 1000
+Wire Wire Line
+	1200 1000 1200 1100
+Wire Wire Line
+	1950 1000 3050 1000
+Wire Wire Line
+	3050 1000 3050 1700
+Connection ~ 1950 1000
+Wire Wire Line
+	1950 1800 1950 2000
+Wire Wire Line
+	3050 2000 3050 1800
+$Comp
+L KC_symbole_moje:N4078 K3
+U 1 1 60E9B895
+P 4050 3200
+F 0 "K3" H 3975 3315 50  0000 C CNN
+F 1 "N4078" H 3975 3224 50  0000 C CNN
+F 2 "CiCad_moje:N4078-2C-5V-0.2W" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0001 C CNN
+	1    4050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L KC_symbole_moje:N4078 K1
+U 1 1 60EA09AD
+P 5450 3250
+F 0 "K1" H 5375 3365 50  0000 C CNN
+F 1 "N4078" H 5375 3274 50  0000 C CNN
+F 2 "CiCad_moje:N4078-2C-5V-0.2W" H 5400 3250 50  0001 C CNN
+F 3 "" H 5400 3250 50  0001 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L KC_symbole_moje:N4078 K5
+U 1 1 60E98326
+P 2550 3200
+F 0 "K5" H 2475 3315 50  0000 C CNN
+F 1 "N4078" H 2475 3224 50  0000 C CNN
+F 2 "CiCad_moje:N4078-2C-5V-0.2W" H 2500 3200 50  0001 C CNN
+F 3 "" H 2500 3200 50  0001 C CNN
+	1    2550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2000 2800 2000
+Wire Wire Line
+	2800 3400 2800 2000
+Connection ~ 2800 2000
+Wire Wire Line
+	2800 2000 3050 2000
+Wire Wire Line
+	2150 3400 1600 3400
+Wire Wire Line
+	1600 3400 1600 5750
+Wire Wire Line
+	1600 5750 1200 5750
+Connection ~ 1200 5750
+Wire Wire Line
+	2800 3800 3350 3800
+Wire Wire Line
+	3350 3800 3350 1000
+Wire Wire Line
+	3350 1000 3050 1000
+Connection ~ 3050 1000
+Wire Wire Line
+	2800 3950 3400 3950
+Wire Wire Line
+	3400 3950 3400 3400
+Wire Wire Line
+	3400 3400 3650 3400
+Wire Wire Line
+	3400 3400 3400 2950
+Wire Wire Line
+	3400 2950 5050 2950
+Wire Wire Line
+	5050 2950 5050 3450
+Connection ~ 3400 3400
+$Comp
+L KC_symbole_moje:N4078 K6
+U 1 1 60EA5861
+P 7350 3250
+F 0 "K6" H 7275 3365 50  0000 C CNN
+F 1 "N4078" H 7275 3274 50  0000 C CNN
+F 2 "CiCad_moje:N4078-2C-5V-0.2W" H 7300 3250 50  0001 C CNN
+F 3 "" H 7300 3250 50  0001 C CNN
+	1    7350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L KC_symbole_moje:N4078 K4
+U 1 1 60EA648A
+P 8800 3250
+F 0 "K4" H 8725 3365 50  0000 C CNN
+F 1 "N4078" H 8725 3274 50  0000 C CNN
+F 2 "CiCad_moje:N4078-2C-5V-0.2W" H 8750 3250 50  0001 C CNN
+F 3 "" H 8750 3250 50  0001 C CNN
+	1    8800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L KC_symbole_moje:N4078 K2
+U 1 1 60EA6EB8
+P 10100 3250
+F 0 "K2" H 10025 3365 50  0000 C CNN
+F 1 "N4078" H 10025 3274 50  0000 C CNN
+F 2 "CiCad_moje:N4078-2C-5V-0.2W" H 10050 3250 50  0001 C CNN
+F 3 "" H 10050 3250 50  0001 C CNN
+	1    10100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3400 4650 3400
+Wire Wire Line
+	4650 3400 4650 4900
+Wire Wire Line
+	4650 4900 6350 4900
+Wire Wire Line
+	6350 4900 6350 3450
+Wire Wire Line
+	6350 3450 5700 3450
+Wire Wire Line
+	6350 4900 8050 4900
+Wire Wire Line
+	8050 4900 8050 3850
+Wire Wire Line
+	8050 3850 8400 3850
+Connection ~ 6350 4900
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 60EA8BDF
+P 6350 5400
+F 0 "J5" H 6430 5392 50  0000 L CNN
+F 1 "STOP" H 6430 5301 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 6350 5400 50  0001 C CNN
+F 3 "~" H 6350 5400 50  0001 C CNN
+	1    6350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3700 8000 3700
+Wire Wire Line
+	8000 3700 8000 5150
+Wire Wire Line
+	8000 5150 7950 5150
+Wire Wire Line
+	6150 5150 6150 5400
+Wire Wire Line
+	6150 5500 6150 5750
+Wire Wire Line
+	6150 5750 1600 5750
+Connection ~ 1600 5750
+Wire Wire Line
+	3350 1000 4800 1000
+Wire Wire Line
+	4800 1000 4800 3850
+Wire Wire Line
+	4800 3850 5050 3850
+Connection ~ 3350 1000
+Wire Wire Line
+	5050 4000 5050 4350
+Wire Wire Line
+	5050 4350 6450 4350
+Wire Wire Line
+	6450 4350 6450 3850
+Wire Wire Line
+	6450 3850 6950 3850
+Wire Wire Line
+	6950 3700 6450 3700
+Wire Wire Line
+	6450 3700 6450 2900
+Wire Wire Line
+	6450 2900 5050 2900
+Wire Wire Line
+	5050 2900 5050 2950
+Connection ~ 5050 2950
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 60EAF3C8
+P 6950 1700
+F 0 "J6" H 7030 1692 50  0000 L CNN
+F 1 "Przycisk_gora" H 7030 1601 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 6950 1700 50  0001 C CNN
+F 3 "~" H 6950 1700 50  0001 C CNN
+	1    6950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 60EB024F
+P 7850 1700
+F 0 "J7" H 7930 1692 50  0000 L CNN
+F 1 "Pilot_gora" H 7930 1601 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 7850 1700 50  0001 C CNN
+F 3 "~" H 7850 1700 50  0001 C CNN
+	1    7850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1000 6750 1000
+Wire Wire Line
+	6750 1000 6750 1700
+Connection ~ 4800 1000
+Wire Wire Line
+	6750 1000 7650 1000
+Wire Wire Line
+	7650 1000 7650 1700
+Connection ~ 6750 1000
+Wire Wire Line
+	7650 1800 7650 2150
+Wire Wire Line
+	7650 2150 6750 2150
+Wire Wire Line
+	6750 2150 6750 1800
+Wire Wire Line
+	6750 2150 6750 3450
+Wire Wire Line
+	6750 3450 6950 3450
+Connection ~ 6750 2150
+Wire Wire Line
+	7600 3450 7950 3450
+Wire Wire Line
+	7950 3450 7950 5150
+Connection ~ 7950 5150
+Wire Wire Line
+	7950 5150 6150 5150
+Wire Wire Line
+	7650 1000 8500 1000
+Wire Wire Line
+	8500 1000 8500 2600
+Wire Wire Line
+	8500 2600 7800 2600
+Wire Wire Line
+	7800 2600 7800 3850
+Wire Wire Line
+	7800 3850 7600 3850
+Connection ~ 7650 1000
+Wire Wire Line
+	7600 4000 7850 4000
+Wire Wire Line
+	7850 4000 7850 3250
+Wire Wire Line
+	7850 3250 8400 3250
+Wire Wire Line
+	8400 3250 8400 3450
+Wire Wire Line
+	8400 3250 8400 2950
+Wire Wire Line
+	8400 2950 9350 2950
+Wire Wire Line
+	9700 2950 9700 3450
+Connection ~ 8400 3250
+Wire Wire Line
+	8500 1000 9500 1000
+Wire Wire Line
+	9500 1000 9500 3900
+Wire Wire Line
+	9500 3900 9700 3900
+Wire Wire Line
+	9700 3900 9700 3850
+Connection ~ 8500 1000
+Wire Wire Line
+	9700 4000 9700 6300
+Wire Wire Line
+	9700 6300 2050 6300
+Wire Wire Line
+	2050 6300 2050 3800
+Wire Wire Line
+	2050 3800 2150 3800
+Wire Wire Line
+	2150 3650 2000 3650
+Wire Wire Line
+	2000 3650 2000 6250
+Wire Wire Line
+	2000 6250 9350 6250
+Wire Wire Line
+	9350 6250 9350 2950
+Connection ~ 9350 2950
+Wire Wire Line
+	9350 2950 9700 2950
+Wire Wire Line
+	9050 3450 9200 3450
+Wire Wire Line
+	9200 3450 9200 5100
+Wire Wire Line
+	9200 5100 10150 5100
+Wire Wire Line
+	11050 5100 11050 3450
+Wire Wire Line
+	11050 3450 10350 3450
+Wire Wire Line
+	10150 5100 10150 6200
+Wire Wire Line
+	10150 6200 4600 6200
+Wire Wire Line
+	4600 6200 4600 3800
+Wire Wire Line
+	4600 3800 4300 3800
+Connection ~ 10150 5100
+Wire Wire Line
+	10150 5100 11050 5100
+Wire Wire Line
+	4300 3650 4450 3650
+Wire Wire Line
+	4450 3650 4450 5150
+Wire Wire Line
+	4450 5150 6150 5150
+Connection ~ 6150 5150
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 60EC540D
+P 2550 6950
+F 0 "J3" H 2630 6942 50  0000 L CNN
+F 1 "K3_NO" H 2630 6851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 2550 6950 50  0001 C CNN
+F 3 "~" H 2550 6950 50  0001 C CNN
+	1    2550 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 60EC5E1A
+P 5000 6950
+F 0 "J4" H 5080 6942 50  0000 L CNN
+F 1 "K4_NO" H 5080 6851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 5000 6950 50  0001 C CNN
+F 3 "~" H 5000 6950 50  0001 C CNN
+	1    5000 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6950 2350 6750
+Wire Wire Line
+	2350 6750 3650 6750
+Wire Wire Line
+	3650 6750 3650 3950
+Wire Wire Line
+	3650 3800 3500 3800
+Wire Wire Line
+	3500 3800 3500 6700
+Wire Wire Line
+	3500 6700 2250 6700
+Wire Wire Line
+	2250 6700 2250 7050
+Wire Wire Line
+	2250 7050 2350 7050
+Wire Wire Line
+	4800 6950 4800 6750
+Wire Wire Line
+	6850 6750 6850 6050
+Wire Wire Line
+	6850 6050 9150 6050
+Wire Wire Line
+	9150 6050 9150 3850
+Wire Wire Line
+	9150 3850 9050 3850
+Wire Wire Line
+	4800 6750 6850 6750
+Wire Wire Line
+	9050 4000 9100 4000
+Wire Wire Line
+	9100 4000 9100 6000
+Wire Wire Line
+	9100 6000 6800 6000
+Wire Wire Line
+	6800 6000 6800 6700
+Wire Wire Line
+	6800 6700 4750 6700
+Wire Wire Line
+	4750 6700 4750 7050
+Wire Wire Line
+	4750 7050 4800 7050
+$EndSCHEMATC
